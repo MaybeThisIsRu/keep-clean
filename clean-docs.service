@@ -1,0 +1,10 @@
+[Unit]
+Description=A bash utility script to watch the ~/Downloads folder and move documents to ~/Documents
+[Service]
+Type=simple
+Environment=source=/home/ru/Downloads
+Environment=destination=/home/ru/Documents
+Environment=look_for=.*doc|docx|xls|xlsx|ppt|pptx|pdf|ods|odp|odf|odt$
+ExecStart=/home/ru/scripts/keep-clean/clean.sh
+Restart=on-failure
+WantedBy=multi-user.target

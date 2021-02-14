@@ -1,6 +1,12 @@
 # keep-clean
 
-A bash script I use to watch for certain file extensions and move them from the Downloads directory to the appropriate home directory. Uses `rsync` to move files and deletes the source after.
+A bash script I use to watch for certain file extensions and move them from the Downloads directory to the appropriate home directory (Documents/Pictures/Videos).
+
+## Dependencies
+
+- `inotify-tools`
+    - On Ubuntu and its derivatives: `sudo apt install inotify-tools`
+- `rsync` to move files and delete the source after
 
 ## Usage
 

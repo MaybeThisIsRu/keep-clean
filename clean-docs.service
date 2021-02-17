@@ -7,4 +7,5 @@ Environment=destination=/home/ru/Documents
 Environment=look_for=.*doc|docx|xls|xlsx|ppt|pptx|pdf|ods|odp|odf|odt$
 ExecStart=/home/ru/scripts/keep-clean/clean.sh
 Restart=on-failure
+[Install]
 WantedBy=multi-user.target
